@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Time elapsed after visiting the website.</title>
+  </head>
+  <body>
+    <style>
+        body {
+            padding: 0.5rem;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+    <h1><span id="time">0</span> elapsed after visiting the website.</h1>
+    <script>
+      let i = 0;
+      setInterval(() => {
+        i++;
+        document.getElementById("time").innerText = i + " seconds";
+        document.title = i + " elapsed after visiting the website.";
+      }, 1000);
+    </script>
+  </body>
+</html>
